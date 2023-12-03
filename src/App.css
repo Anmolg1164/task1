@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: medium;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+  background: linear-gradient(to right,rgb(232, 203, 208),rgb(220, 209, 209));
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchBar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+margin-bottom: 10px;
+  
+}
+#gsearch{
+  padding: 7px;
+  width: 35%;
+  height: 20%;
+
+}
+
+.oneBox{
+  border-radius: 3px;
+  border: gray 2px solid;
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+  padding-left: 7px;
+  padding-right: 18px;
+  height: 45px;
   align-items: center;
+
+  
+}
+.mainHead{
+  border-radius: 3px;
+  border: gray 2px solid;
+  display: flex;
+  padding-left: 7px;
+  padding-right: 18px;
+  justify-content: space-between;
+  height: 10%;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: gray;
+  height: 45px;
+  align-items: center;
+
+}
+.totalItem{
+  margin-top: 35px
+}
+.pageNavigate{
+  margin-top: 15px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 15px;
+
+}
+.oneBox.selected {
+  background-color: #eae4e4; 
+}
+.pageDec{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 10px;
+  align-items: center;
+  font-size: medium;
 }
 
-.App-link {
-  color: #61dafb;
-}
+#btnAll{
+  padding: 4px;
+  font-weight: 600;
+  background-color: #eae4e4;
+margin: 3px;
+cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
